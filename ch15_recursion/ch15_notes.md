@@ -82,7 +82,11 @@ def f(n):
 f(1234567)
 
 # OUTPUT: RecursionError: maximum recursion depth exceeded in comparison
-# BASE CASE: The base case is missing because the f(n // 10) is outside of the condtion if n > 0. Therefore, the recursive call of f(n // 10) still runs when n == 0. To correct this the proper code with a base case would be:
+''' 
+BASE CASE: 
+The base case is missing because the f(n // 10) is outside of the condtion if n > 0. 
+Therefore, the recursive call of f(n // 10) still runs when n == 0. To correct this the proper code with a base case would be:
+'''
 def f(n):
     if n > 0: 
         print(n % 10)
